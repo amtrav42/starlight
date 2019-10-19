@@ -6,4 +6,22 @@
   height: 50px;
   margin: 10px;
   border-radius: 5px;
+  }
+  #cryLaugh{
+    position: relative;
+  }
+@keyframes cryLaughZoom {
+  0% {
+    background: url("cryLaugh.png");
+    animation-timing-function: ease-in;
+  }
+  100% {
+    background: url("cryLaugh.png");
+    transform: rotate(1440deg);
+    animation-timing-function: ease-out;
+  }
+}
+.animationCryLaugh {
+  animation-name: cryLaughZoom;
+  animation-duration: 5s;
 }
