@@ -7,10 +7,10 @@
   margin: 10px;
   border-radius: 5px;
   }
-  #cryLaugh{
-    position: relative;
-  }
-@keyframes cryLaughZoom {
+.clickable{
+  position: relative;
+}
+@keyframes rotateClockwise {
   0% {
     background: url("cryLaugh.png");
     animation-timing-function: ease-in;
@@ -21,7 +21,34 @@
     animation-timing-function: ease-out;
   }
 }
+@keyframes rotateAnticlockwise {
+  0% {
+    background: url("cryLaugh.png");
+    animation-timing-function: ease-in;
+  }
+  100% {
+    background: url("cryLaugh.png");
+    transform: rotate(-1440deg);
+    animation-timing-function: ease-out;
+  }
+}
 .animationCryLaugh {
-  animation-name: cryLaughZoom;
-  animation-duration: 5s;
+  animation-name: rotateClockwise;
+  animation-duration: 2.5s;
+}
+.animationHeartEyes {
+  animation-name: rotateAnticlockwise;
+  animation-duration: 3s;
+}
+.animationPoop {
+  animation-name: rotateClockwise;
+  animation-duration: 3.1s;
+}
+.animationSad {
+  animation-name: rotateAnticlockwise;
+  animation-duration: 3.2s;
+}
+.animationShock {
+  animation-name: rotateClockwise;
+  animation-duration: 2.8s;
 }
