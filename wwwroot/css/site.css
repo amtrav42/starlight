@@ -1,0 +1,223 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 14px;
+}
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+/*navbar styling*/
+.navbar-starlight {
+  background-image: url("/images/header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #4c2f8c;
+  padding: 0px;
+  width: 100%
+}
+.navContainer{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.navbar-starlight a {
+    color: white;
+}
+.nav > li > a:hover, .nav > li > a:focus, .navbar-starlight a:hover {
+  background-color: #2f1d57;
+}
+.btn-link:hover, .btn-link:focus, .btn-link{
+    color: white;
+}
+.navIcon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 8px;
+}
+/*index page styling*/
+.headerCountdown{
+  height: 50px;
+}
+.contentBox{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.iframe {
+  width: 500px;
+  height: 285px;
+}
+.challengeLink{
+  background-color: #fce43a;
+  width: 280px;
+  height: 280px;
+  margin: 50px;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 4px;
+}
+#challengeIcon{
+  width: 140px;
+  height: 100px;
+  margin: 0px 90px;
+}
+#challengeText{
+  text-align: center;
+}
+.topPadding{
+  height: 180px;
+}
+.uploadedGallery{
+  display: flex;
+  flex-wrap: wrap;
+}
+.galleryImage{
+  margin: 10px;
+  border: 1px;
+  border-radius: 6px;
+}
+/*live page styling*/
+.liveVideo{
+  background-color: #fce43a;
+  background-image: url("/images/starlightVid1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 900px;
+}
+.vidWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*live page styling*/
+.challengeVideo{
+  background-color: #fce43a;
+  background-image: url("/images/starlightVid1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 250px;
+  width: 450px;
+  margin: 20px;
+}
+.challengeVidWinner{
+  display: flex;
+  justify-content: space-around;
+}
+.challengeButton{
+  border-radius: 4px;
+  background-color: #75c9d3;
+  border: 1px;
+  margin: 10px;
+  padding: 10px 15px;
+  color: white;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.buttonWrapper{
+  display: flex;
+  align-items: flex-start;
+  padding-left: 100px;
+}
+/*styling for emojis*/
+.emojiContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.squarepic{
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.clickable{
+  position: relative;
+}
+@keyframes rotateClockwise {
+  0% {
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: rotate(1440deg);
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes rotateAnticlockwise {
+  0% {
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: rotate(-1440deg);
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes rotateBoth {
+  0% {
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: rotate(720deg);
+  }
+  100% {
+    transform: rotate(-720deg);
+    animation-timing-function: ease-out;
+  }
+}
+.animationCryLaugh {
+  animation-name: rotateClockwise;
+  animation-duration: 2.5s;
+}
+.animationHeartEyes {
+  animation-name: rotateAnticlockwise;
+  animation-duration: 3s;
+}
+.animationPoop {
+  animation-name: rotateBoth;
+  animation-duration: 3.1s;
+}
+.animationSad {
+  animation-name: rotateAnticlockwise;
+  animation-duration: 3.2s;
+}
+.animationShock {
+  animation-name: rotateClockwise;
+  animation-duration: 2.8s;
+}

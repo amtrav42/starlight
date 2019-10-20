@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Starlight Interactive Play Hub</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-starlight navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Starlight Interactive Play Hub</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <div class="navContainer">
+                <ul class="nav navbar-nav">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index"><div class="navIcon"><img src="/images/homestar.png" alt=""><div><h3>Home</h3></div></a></div></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Live"><div class="navIcon"><img src="/images/starlightTVBlue.png" alt=""><div><h3>Starlight TV</h3></div></a></div></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="DailyChallenge"><div class="navIcon"><img src="/images/saturnPink.png" alt=""><div><h3>Galaxy Challenge</h3></div></a></div></li>
+                    <li><a id="makeTheCall"><div class="navIcon"><img src="/images/phoneYellow.png" alt=""><div><h3>Call a Captain</h3></div></a></div></li>
+                </ul>
+              </div>
+              <partial name="_LoginPartial" />
+            </div>
+        </div>
+    </nav>
+
+    <partial name="_CookieConsentPartial" />
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; 2019 - Starlight Interactive Play Hub Demo Copyright</p>
+        </footer>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
